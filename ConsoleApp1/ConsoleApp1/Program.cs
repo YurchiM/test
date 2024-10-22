@@ -31,6 +31,7 @@ class Program
         IDiscount regularDiscount = new RegularCustomerDiscount();
         double regularCustomerDiscount = calculator.CalculateDiscount(regularDiscount); // Вернет 0.1
         Console.WriteLine(regularCustomerDiscount);
+        Console.WriteLine("Для обычного клиента");
 
 // Для премиум клиента
         IDiscount premiumDiscount = new PremiumCustomerDiscount();
