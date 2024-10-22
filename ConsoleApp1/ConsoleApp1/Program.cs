@@ -36,5 +36,7 @@ class Program
 // Для премиум клиента
         IDiscount premiumDiscount = new PremiumCustomerDiscount();
         double premiumCustomerDiscount = calculator.CalculateDiscount(premiumDiscount); // Вернет 0.2
+        Console.WriteLine("Для премиум клиента");
+
     } 
 }
