@@ -1,4 +1,6 @@
-﻿public interface IDiscount
+﻿using System.Threading.Channels;
+
+public interface IDiscount
 {
     double GetDiscount();
 }
@@ -10,7 +12,7 @@ public class RegularCustomerDiscount : IDiscount
 
 public class PremiumCustomerDiscount : IDiscount
 {
-    public double GetDiscount() => 0.2;
+    public double GetDiscount() => 0.3;
 }
 
 public class DiscountCalculator
